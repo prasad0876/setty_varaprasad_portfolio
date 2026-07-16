@@ -97,7 +97,7 @@ function CircularSkill({ skill, delay }: { skill: Skill; delay: number }) {
           </defs>
         </svg>
         <div className="absolute inset-0 grid place-items-center">
-          <Icon className="h-8 w-8" style={{ color: skill.color }} />
+          {(() => { const I = skill.icon as React.ComponentType<{ className?: string; style?: React.CSSProperties }>; return <I className="h-8 w-8" style={{ color: skill.color }} />; })()}
         </div>
       </div>
       <div className="text-center">
