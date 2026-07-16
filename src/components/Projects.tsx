@@ -14,6 +14,8 @@ const projects = [
     icons: [SiHtml5, SiCss, SiJavascript, SiFirebase],
     gradient: "from-neon-cyan/30 via-neon-blue/20 to-transparent",
     accent: "#22d3ee",
+    demo: "https://futurefashion.netlify.app/",
+    github: "https://github.com/prasad0876/futurefashion",
   },
   {
     title: "MovieFlix",
@@ -25,6 +27,8 @@ const projects = [
     icons: [SiNodedotjs, SiExpress, SiMongodb, SiReact],
     gradient: "from-neon-purple/30 via-neon-pink/20 to-transparent",
     accent: "#c084fc",
+    demo: null,
+    github: "https://github.com/prasad0876/movieflix",
   },
 ];
 
@@ -121,10 +125,12 @@ export function Projects() {
                   </div>
 
                   <div className="mt-6 flex flex-wrap gap-3">
-                    <a href="#" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-neon-blue to-neon-purple px-5 py-2.5 text-sm font-semibold text-background transition-transform hover:scale-105">
-                      <ExternalLink className="h-4 w-4" /> Live Demo
-                    </a>
-                    <a href="#" className="inline-flex items-center gap-2 rounded-full glass px-5 py-2.5 text-sm font-semibold transition-colors hover:text-neon-cyan">
+                    {p.demo && (
+                      <a href={p.demo} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-neon-blue to-neon-purple px-5 py-2.5 text-sm font-semibold text-background transition-transform hover:scale-105">
+                        <ExternalLink className="h-4 w-4" /> Live Demo
+                      </a>
+                    )}
+                    <a href={p.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full glass px-5 py-2.5 text-sm font-semibold transition-colors hover:text-neon-cyan">
                       <Github className="h-4 w-4" /> GitHub
                     </a>
                   </div>
