@@ -55,8 +55,8 @@ export function Contact() {
                 <div className="mb-3 text-[11px] uppercase tracking-widest text-muted-foreground">Follow me</div>
                 <div className="flex gap-3">
                   {[
-                    { icon: Linkedin, href: "#", label: "LinkedIn" },
-                    { icon: Github, href: "#", label: "GitHub" },
+                    { icon: Linkedin, href: "https://www.linkedin.com/in/varaprasadsetty/", label: "LinkedIn" },
+                    { icon: Github, href: "https://github.com/prasad0876/", label: "GitHub" },
                     { icon: Code2, href: "#", label: "LeetCode" },
                   ].map(({ icon: Icon, href, label }) => (
                     <a
