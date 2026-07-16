@@ -126,11 +126,11 @@ export function Projects() {
 
                   <div className="mt-6 flex flex-wrap gap-3">
                     {p.demo && (
-                      <a href={p.demo} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-neon-blue to-neon-purple px-5 py-2.5 text-sm font-semibold text-background transition-transform hover:scale-105">
+                      <a href={p.demo} target="_blank" rel="noopener noreferrer" onClick={(e) => { e.preventDefault(); window.open(p.demo, "_blank", "noopener,noreferrer"); }} className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-neon-blue to-neon-purple px-5 py-2.5 text-sm font-semibold text-background transition-transform hover:scale-105 cursor-pointer">
                         <ExternalLink className="h-4 w-4" /> Live Demo
                       </a>
                     )}
-                    <a href={p.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full glass px-5 py-2.5 text-sm font-semibold transition-colors hover:text-neon-cyan">
+                    <a href={p.github} target="_blank" rel="noopener noreferrer" onClick={(e) => { e.preventDefault(); window.open(p.github, "_blank", "noopener,noreferrer"); }} className="inline-flex items-center gap-2 rounded-full glass px-5 py-2.5 text-sm font-semibold transition-colors hover:text-neon-cyan cursor-pointer">
                       <Github className="h-4 w-4" /> GitHub
                     </a>
                   </div>
