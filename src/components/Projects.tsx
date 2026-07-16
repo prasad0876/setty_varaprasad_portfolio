@@ -30,6 +30,19 @@ const projects = [
     demo: null,
     github: "https://github.com/prasad0876/movieflix",
   },
+  {
+    title: "Local Link",
+    subtitle: "Local Connection Platform",
+    role: "Full Stack Developer",
+    description:
+      "A community-focused platform connecting local services and users with real-time listings, search and a responsive modern interface.",
+    tags: ["React", "Node.js", "Express", "MongoDB"],
+    icons: [SiReact, SiNodedotjs, SiExpress, SiMongodb],
+    gradient: "from-neon-cyan/30 via-neon-purple/20 to-transparent",
+    accent: "#34d399",
+    demo: "https://local-link-connect.netlify.app",
+    github: "https://github.com/prasad0876/local_link",
+  },
 ];
 
 function LaptopMockup({ accent }: { accent: string }) {
