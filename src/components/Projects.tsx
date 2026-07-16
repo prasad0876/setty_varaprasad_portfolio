@@ -14,6 +14,8 @@ const projects = [
     icons: [SiHtml5, SiCss, SiJavascript, SiFirebase],
     gradient: "from-neon-cyan/30 via-neon-blue/20 to-transparent",
     accent: "#22d3ee",
+    demo: "https://futurefashion.netlify.app/",
+    github: "https://github.com/prasad0876/futurefashion",
   },
   {
     title: "MovieFlix",
@@ -25,6 +27,8 @@ const projects = [
     icons: [SiNodedotjs, SiExpress, SiMongodb, SiReact],
     gradient: "from-neon-purple/30 via-neon-pink/20 to-transparent",
     accent: "#c084fc",
+    demo: null,
+    github: "https://github.com/prasad0876/movieflix",
   },
 ];
 
