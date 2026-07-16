@@ -62,6 +62,8 @@ export function Contact() {
                     <a
                       key={label}
                       href={href}
+                      target={href.startsWith("http") ? "_blank" : undefined}
+                      rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
                       aria-label={label}
                       className="group grid h-11 w-11 place-items-center rounded-xl glass transition-all hover:-translate-y-1 hover:border-neon-cyan/60 hover:text-neon-cyan hover:shadow-[0_0_20px_oklch(0.85_0.16_200/40%)]"
                     >
