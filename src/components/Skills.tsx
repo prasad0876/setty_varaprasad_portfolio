@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { SectionHeading } from "./Section";
 import {
   SiJavascript, SiPython, SiReact, SiAngular, SiNodedotjs, SiExpress, SiMongodb,
-  SiFirebase, SiGit, SiGithub, SiHtml, SiCss, SiMysql,
+  SiFirebase, SiGit, SiGithub, SiHtml5, SiCss, SiMysql,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { Code2 } from "lucide-react";
@@ -22,7 +22,7 @@ const categories: { title: string; skills: Skill[] }[] = [
   {
     title: "Frontend",
     skills: [
-      { name: "HTML", level: 95, icon: SiHtml, color: "#e34f26" },
+      { name: "HTML", level: 95, icon: SiHtml5, color: "#e34f26" },
       { name: "CSS", level: 90, icon: SiCss, color: "#264de4" },
       { name: "JavaScript", level: 88, icon: SiJavascript, color: "#f7df1e" },
       { name: "React", level: 85, icon: SiReact, color: "#61DAFB" },

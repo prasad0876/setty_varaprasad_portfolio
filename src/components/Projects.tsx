@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github, Sparkles } from "lucide-react";
 import { SectionHeading } from "./Section";
-import { SiHtml, SiCss, SiJavascript, SiFirebase, SiNodedotjs, SiExpress, SiMongodb, SiReact } from "react-icons/si";
+import { SiHtml5, SiCss, SiJavascript, SiFirebase, SiNodedotjs, SiExpress, SiMongodb, SiReact } from "react-icons/si";
 
 const projects = [
   {
@@ -11,7 +11,7 @@ const projects = [
     description:
       "Responsive e-commerce platform with login system, Firebase authentication, shopping cart and smooth UI animations.",
     tags: ["HTML", "CSS", "JavaScript", "Firebase"],
-    icons: [SiHtml, SiCss, SiJavascript, SiFirebase],
+    icons: [SiHtml5, SiCss, SiJavascript, SiFirebase],
     gradient: "from-neon-cyan/30 via-neon-blue/20 to-transparent",
     accent: "#22d3ee",
   },
